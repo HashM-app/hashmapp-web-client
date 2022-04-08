@@ -1,7 +1,13 @@
+@use 'sass:map';
+@use '../../../styles/palettes' as palettes;
+
 .app-files {
 	main {
 		display: grid;
-		min-height: calc(100vh - 96px);
 		padding: 16px;
+	}
+
+	.mat-column-type {
+		width: 48px;
 	}
 }
