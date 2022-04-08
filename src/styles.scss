@@ -1,3 +1,4 @@
+@use 'sass:map';
 @use '@angular/material' as mat;
 @use 'styles/palettes' as palettes;
 
@@ -20,4 +21,4 @@ $hashmapp-web-client-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { background-color: map.get(palettes.$prussian-blue, 900); margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
