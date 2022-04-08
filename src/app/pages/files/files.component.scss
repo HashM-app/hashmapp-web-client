@@ -10,4 +10,28 @@
 	.mat-column-type {
 		width: 48px;
 	}
+
+	.mat-column-name {
+		flex: 12;
+	}
+
+	.mat-column-size {
+		flex: 3;
+	}
+
+	.mat-column-created, .mat-column-modified {
+		flex: 4;
+	}
+
+	.mat-footer-row,
+	.mat-header-row,
+	.mat-row {
+		display: inline-flex;
+		min-width: 100%;
+
+		& .mat-header-cell, & .mat-cell {
+			align-items: center;
+			display: flex;
+		}
+	}
 }
