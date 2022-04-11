@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="app-login">
+	<main>
+		<mat-card class="login-card">
+			<mat-card-content>
+				<form class="login-form" [formGroup]="loginForm">
+					<mat-form-field class="login-form__username no-padding" appearance="outline">
+						<mat-label for="login-form__input--email">Username</mat-label>
+						<input type="email" name="login-form__input--email" matInput formControlName="username" />
+					</mat-form-field>
+
+					<mat-form-field class="login-form__password no-padding" appearance="outline">
+						<mat-label for="login-form__input--password">Password</mat-label>
+						<input type="password" name="login-form__input--password" matInput formControlName="password" />
+					</mat-form-field>
+				</form>
+				<mat-divider></mat-divider>
+			</mat-card-content>
+			<mat-card-actions align="end">
+				<button mat-flat-button color="primary">Sign In</button>
+			</mat-card-actions>
+		</mat-card>
+	</main>
+</div>

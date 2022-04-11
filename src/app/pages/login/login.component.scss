@@ -1,0 +1,13 @@
+.app-login {
+	& main {
+		align-content: center;
+		display: grid;
+		justify-content: center;
+		padding-top: 10%;
+
+		& .login-form {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
