@@ -6,7 +6,11 @@ import { FilesComponent } from './pages/files/files.component';
 import { PipesModule } from './pipes/pipes-module.module';
 import { LoginComponent } from './pages/login/login.component';
 
-const routes: Routes = [{ path: 'files', component: FilesComponent }];
+const routes: Routes = [
+	{ path: 'login', component: LoginComponent },
+	{ path: 'files', component: FilesComponent },
+	{ path: '', redirectTo: '/login', pathMatch: 'full' },
+];
 
 @NgModule({
 	imports: [CommonModule, MaterialModule, PipesModule, RouterModule.forRoot(routes)],
